@@ -1,0 +1,50 @@
+* {
+    font-family: Roboto, sans-serif;
+    font-size: 18px;
+}
+
+body {
+    padding: 10px 20px;
+}
+
+#title {
+    font-size: 32px;
+    text-align: center;
+    color: #1590bd;
+    margin-bottom: 30px;
+}
+
+.extList {
+    margin-bottom: 40px;
+}
+
+.extList li {
+    display: flex;
+    flex-direction: column;
+    padding: 10px 0;
+    border-bottom: 1px solid #dfdfdf;
+}
+
+.extList li > div {
+    margin: 7px;
+}
+
+.extList span.code {
+    padding: 2px;
+    border-radius: 4px;
+    background-color: #dfdfdf;
+}
+
+.extList li button {
+    padding: 5px 10px;
+    background-color: #15bd42;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-family: Roboto, sans-serif;
+    cursor: pointer;
+}
+
+.extList li button:hover {
+    background-color: #47d36c;
+}

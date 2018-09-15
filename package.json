@@ -1,0 +1,27 @@
+{
+  "name": "figma-plugin-manager",
+  "version": "0.1.0",
+  "description": "Unofficial desktop app for using Figma plugins inside the Figma desktop app",
+  "main": "src/index.js",
+  "author": "Carlos Galarza <carloslfu@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "start": "electron .",
+    "getSrc": "node scripts/runGetSrc",
+    "build": "build",
+    "electron-rebuild": "electron-rebuild --parallel --force --types prod,dev,optional --module-dir app"
+  },
+  "dependencies": {
+    "@getstation/repackage-chrome-extension-for-electron": "^0.1.1",
+    "asar": "^0.14.3",
+    "axios": "^0.18.0",
+    "glob": "^7.1.3",
+    "rimraf": "^2.6.2",
+    "username": "^4.0.0"
+  },
+  "devDependencies": {
+    "adm-zip": "^0.4.11",
+    "electron": "^2.0.9",
+    "electron-builder": "^20.28.4"
+  }
+}

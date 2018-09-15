@@ -8,7 +8,7 @@ Supported plugins are listed in the [Figma Community Plugins List](https://githu
 
 ## Roadmap
 
-- [ ] Refresh plugins
+- [x] Refresh plugins
 - [ ] Inject plugins
 - [ ] Update plugins automatically
 - [ ] Better logo

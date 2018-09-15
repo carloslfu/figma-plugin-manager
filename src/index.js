@@ -1,9 +1,9 @@
-const {app, BrowserWindow} = require('electron')
+const { app, BrowserWindow, ipcMain } = require('electron')
 const { startManager } = require('./extensionManager')
 
 async function createWindow () {
-  await startManager()  
-  const win = new BrowserWindow({width: 800, height: 600})
+  await startManager()
+  const win = new BrowserWindow({ width: 800, height: 600 })
   win.webContents.openDevTools()
   win.loadFile('src/renderer/index.html')
   win.on('close', () => {
@@ -23,4 +23,9 @@ app.on('activate', () => {
   if (win === null) {
     createWindow()
   }
+})
+
+ipcMain.on('refresh', async event => {
+  await startManager()
+  event.returnValue = ''
 })
